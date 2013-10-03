@@ -1,12 +1,13 @@
 <?php
 
+$mendeley_consumer_key = "87694469dd54b12976b5c8476f56e1190524c09f3";
+$mendeley_endpoint = "http://api.mendeley.com/oapi/";
+
 //SAMPLE USE
 print(mendeley_get_readers("10.1145/1323688.1323690"));
 //-----------------------------------
 
 
-$mendeley_consumer_key = "87694469dd54b12976b5c8476f56e1190524c09f3";
-$mendeley_endpoint = "http://api.mendeley.com/oapi/";
 
 function mendeley_get_pub_stats_from_doi($doi) {
   global $mendeley_consumer_key;

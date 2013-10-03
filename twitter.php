@@ -1,11 +1,13 @@
 <?php
 
+
+$twitter_endpoint = "http://urls.api.twitter.com/";
+
 //SAMPLE USE
 $urls = array("http://biodiversitydatajournal.com/articles.php?id=995", "http://dx.doi.org/10.3897/BDJ.1.e995");
 print twitter_get_tweet_count($urls);
 //-----------------------------------
 
-$twitter_endpoint = "http://urls.api.twitter.com/";
 
 //Function allows for an array to be passed, for example containg a dx.doi.org URL and one for journal's website of same paper
 function twitter_get_tweet_count($urls) {

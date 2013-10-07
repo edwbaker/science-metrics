@@ -4,7 +4,7 @@ $mendeley_consumer_key = "87694469dd54b12976b5c8476f56e1190524c09f3";
 $mendeley_endpoint = "http://api.mendeley.com/oapi/";
 
 //SAMPLE USE
-print(mendeley_get_readers("10.1145/1323688.1323690"));
+//print(mendeley_get_readers("10.1145/1323688.1323690"));
 //-----------------------------------
 
 
@@ -23,5 +23,9 @@ function mendeley_get_readers($parameter) {
   if (!is_object($parameter)) {
   	$parameter = mendeley_get_pub_stats_from_doi($parameter);
   }
-  return $parameter->stats->readers;
+  if (isset($parameter->stats->readers)) {
+    return $parameter->stats->readers;
+  } else {
+  	return 0;
+  }
 }

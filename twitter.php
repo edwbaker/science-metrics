@@ -4,8 +4,8 @@
 $twitter_endpoint = "http://urls.api.twitter.com/";
 
 //SAMPLE USE
-$urls = array("http://biodiversitydatajournal.com/articles.php?id=995", "http://dx.doi.org/10.3897/BDJ.1.e995");
-print twitter_get_tweet_count($urls);
+//$urls = array("http://biodiversitydatajournal.com/articles.php?id=995", "http://dx.doi.org/10.3897/BDJ.1.e995");
+//print twitter_get_tweet_count($urls);
 //-----------------------------------
 
 

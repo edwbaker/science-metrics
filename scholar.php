@@ -1,8 +1,8 @@
 <?php
 
 //SAMPLE USE
-$id = "C35K34MAAAAJ";
-print_r(google_scholar_get_stats($id));
+//$id = "C35K34MAAAAJ";
+//print_r(google_scholar_get_stats($id));
 //-----------------------------------
 
 function google_scholar_get_stats($google_scholar_id){
